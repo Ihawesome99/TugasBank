@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="443.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="data.isian.laundry.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="143.0" layoutY="24.0" text="Data Isian Laundry">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="nama" layoutX="41.0" layoutY="73.0" text="Nama" />
+      <Label fx:id="alamat" layoutX="38.0" layoutY="112.0" text="Alamat" />
+      <Label fx:id="berat" layoutX="40.0" layoutY="155.0" text="Berat Cucian" />
+      <Label fx:id="nomor" layoutX="40.0" layoutY="197.0" text="Nomor Telepon" />
+      <Label fx:id="paket" layoutX="40.0" layoutY="234.0" text="Pilihan Paket Laundry" />
+      <TextField fx:id="edit_nama" layoutX="175.0" layoutY="69.0" />
+      <TextField fx:id="edit_alamat" layoutX="175.0" layoutY="108.0" />
+      <TextField fx:id="edit_berat" layoutX="175.0" layoutY="151.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="edit_nomor" layoutX="175.0" layoutY="193.0" />
+      <RadioButton fx:id="pkt1" layoutX="174.0" layoutY="234.0" mnemonicParsing="false" text="Cuci Kering">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilihan" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="pkt2" layoutX="281.0" layoutY="234.0" mnemonicParsing="false" text="Cuci Kering Setrika" toggleGroup="$pilihan" />
+      <RadioButton fx:id="pkt3" layoutX="174.0" layoutY="261.0" mnemonicParsing="false" text="Setrika" toggleGroup="$pilihan" />
+      <Label fx:id="tanggal" layoutX="40.0" layoutY="297.0" text="Tanggal Pengambilan" />
+      <TextField fx:id="edit_tanggal" layoutX="175.0" layoutY="293.0" />
+      <Button fx:id="oke" layoutX="142.0" layoutY="350.0" mnemonicParsing="false" onAction="#proses" prefHeight="25.0" prefWidth="67.0" text="Oke" />
+      <Button fx:id="hapus" layoutX="248.0" layoutY="350.0" mnemonicParsing="false" onAction="#hapus" prefHeight="25.0" prefWidth="67.0" text="Hapus" />
+      <Label layoutX="308.0" layoutY="155.0" text="Kg" />
+      <TextArea fx:id="hasil" layoutX="59.0" layoutY="406.0" prefHeight="130.0" prefWidth="323.0" />
+    </children>
+</AnchorPane>
